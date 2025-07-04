@@ -1,5 +1,7 @@
 package satyam.projects.reminder_app.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,6 +16,11 @@ public TaskRepository taskRepository;
 
 public Task addTask(Task task){
     return taskRepository.save(task);
+}
+
+public List<Task> getAllTasks() {
+    return taskRepository.findAll();
+
 }
 
 }
