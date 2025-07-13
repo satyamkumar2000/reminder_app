@@ -45,6 +45,14 @@ public boolean getIsNotified(){
     return isNotified;
 }
 
+public void setDueTime(LocalDateTime dueTime){
+    this.dueTime = dueTime;
+}
+
+public LocalDateTime getDueTime(){
+    return dueTime;
+}
+
 public void setIsCompleted(boolean isCompleted){
     this.isCompleted = isCompleted;
 }
